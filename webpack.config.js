@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
 
 module.exports = {
@@ -14,14 +15,15 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
+  mode: 'development',
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js'
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin()],
   devServer: {
-    contentBase: './dist',
+    static: './dist',
     hot: true
   }
 }
