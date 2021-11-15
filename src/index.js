@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './pages/home'
+import App from './App'
+
 
 // const title = 'My Minimal React Webpack Babel Setup'
 
-ReactDOM.render(<div><Home /></div>, document.getElementById('app'))
+ReactDOM.render(<div><App /></div>, document.getElementById('app'))
 
 module.hot.accept()

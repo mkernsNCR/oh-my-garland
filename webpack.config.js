@@ -21,7 +21,14 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
-  plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Oh My Garland!',
+      template: './src/index.html',
+      inject: 'body'
+    })
+  ],
   devServer: {
     static: './dist',
     hot: true
