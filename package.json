@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Boilerplate React Template",
   "main": "index.js",
-  "homepage": "https://mkernsNCR.github.io/oh-my-garland",
+  "homepage": "https://mkernsncr.github.io/oh-my-garland/",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack",
